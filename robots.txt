@@ -1,27 +1,19 @@
 # robots.txt for cookathome.blog
+
 User-agent: *
 Allow: /
 
-# Pinterest Bot
-User-agent: Pinterest
-Allow: /
-Crawl-delay: 1
-
+# Welcome Pinterest
 User-agent: Pinterestbot
 Allow: /
-Crawl-delay: 1
 
-# Common search engines
+# Welcome Google
 User-agent: Googlebot
 Allow: /
 
+# Welcome Bing
 User-agent: Bingbot
 Allow: /
 
-# Sitemap
+# Sitemap location
 Sitemap: https://cookathome.blog/sitemap.xml
-
-# Disallow admin/private areas
-Disallow: /admin/
-Disallow: /private/
-Disallow: /api/
