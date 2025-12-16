@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cook at Home | Rustic Family Recipes & Comfort Food</title>
+    <meta name="description" content="Discover heartwarming family recipes passed down through generations. Simple, comforting dishes made with love in your own kitchen.">
+    
+    <!-- Pinterest Verification & Rich Pins -->
+    <!-- Pinterest Domain Verification - Replace YOUR_CODE with your actual Pinterest verification code -->
+    <meta name="p:domain_verify" content="YOUR_PINTEREST_VERIFICATION_CODE">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Cook at Home">
+    <meta property="og:title" content="Cook at Home | Rustic Family Recipes & Comfort Food">
+    <meta property="og:description" content="Discover heartwarming family recipes passed down through generations. Simple, comforting dishes made with love.">
+    <meta property="og:image" content="https://cookathome.blog/images/og-image.jpg">
+    <meta property="og:url" content="https://cookathome.blog">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cook at Home | Rustic Family Recipes">
+    <meta name="twitter:description" content="Heartwarming family recipes passed down through generations.">
+    <meta name="twitter:image" content="https://cookathome.blog/images/og-image.jpg">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://cookathome.blog">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Cook at Home",
+        "url": "https://cookathome.blog",
+        "description": "Rustic family recipes and comfort food for the home cook",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Cook at Home",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://cookathome.blog/images/logo.png"
+            }
+        }
+    }
+    </script>
+    
+    <style>
+        :root {
+            --cream: #FDF6E3;
+            --warm-brown: #8B4513;
+            --rust: #C65D3B;
+            --olive: #606B38;
+            --dark-wood: #3D2914;
+            --butter: #F5DEB3;
+            --sage: #9CAF88;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Libre Baskerville', Georgia, serif;
+            background: var(--cream);
+            color: var(--dark-wood);
+            line-height: 1.7;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5c1.5 0 2.5 1.5 2.5 3s-1 3-2.5 3-2.5-1.5-2.5-3 1-3 2.5-3z' fill='%238B4513' fill-opacity='0.03'/%3E%3C/svg%3E");
+        }
+        
+        .handwritten { font-family: 'Caveat', cursive; }
+        
+        header {
+            background: linear-gradient(180deg, var(--butter) 0%, var(--cream) 100%);
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 3px double var(--warm-brown);
+            position: relative;
+        }
+        
+        header::before { content: '🌾'; position: absolute; left: 2rem; top: 50%; transform: translateY(-50%); font-size: 2rem; opacity: 0.7; }
+        header::after { content: '🌾'; position: absolute; right: 2rem; top: 50%; transform: translateY(-50%) scaleX(-1); font-size: 2rem; opacity: 0.7; }
+        
+        .logo { font-size: 3.5rem; color: var(--warm-brown); margin-bottom: 0.5rem; text-shadow: 2px 2px 0 var(--butter); }
+        .tagline { font-size: 1.5rem; color: var(--rust); font-style: italic; }
+        
+        nav {
+            background: var(--warm-brown);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 15px rgba(61, 41, 20, 0.3);
+        }
+        
+        nav ul { list-style: none; display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+        nav a { color: var(--cream); text-decoration: none; font-size: 1rem; letter-spacing: 1px; transition: color 0.3s; padding: 0.5rem 0; border-bottom: 2px solid transparent; }
+        nav a:hover { color: var(--butter); border-bottom-color: var(--butter); }
+        
+        .hero {
+            background: var(--olive);
+            color: var(--cream);
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50' cy='50' r='40' stroke='%23FDF6E3' stroke-width='1' fill='none' opacity='0.1'/%3E%3C/svg%3E");
+            opacity: 0.3;
+        }
+        
+        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; position: relative; }
+        .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto; font-style: italic; position: relative; }
+        
+        main { max-width: 1200px; margin: 0 auto; padding: 3rem 1.5rem; }
+        
+        .section-title { text-align: center; margin-bottom: 3rem; }
+        .section-title h2 { font-size: 2.5rem; color: var(--warm-brown); margin-bottom: 0.5rem; }
+        .section-title .divider { display: flex; align-items: center; justify-content: center; gap: 1rem; color: var(--rust); }
+        .section-title .divider::before, .section-title .divider::after { content: ''; width: 80px; height: 2px; background: linear-gradient(90deg, transparent, var(--rust), transparent); }
+        
+        .recipes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 2.5rem; }
+        
+        .recipe-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(61, 41, 20, 0.15);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            border: 1px solid var(--butter);
+            animation: fadeInUp 0.6s ease backwards;
+        }
+        
+        .recipe-card:hover { transform: translateY(-8px); box-shadow: 0 15px 40px rgba(61, 41, 20, 0.25); }
+        .recipe-card:nth-child(1) { animation-delay: 0.1s; }
+        .recipe-card:nth-child(2) { animation-delay: 0.2s; }
+        .recipe-card:nth-child(3) { animation-delay: 0.3s; }
+        .recipe-card:nth-child(4) { animation-delay: 0.4s; }
+        .recipe-card:nth-child(5) { animation-delay: 0.5s; }
+        .recipe-card:nth-child(6) { animation-delay: 0.6s; }
+        
+        .recipe-image {
+            width: 100%;
+            height: 240px;
+            background: linear-gradient(135deg, var(--butter) 0%, var(--sage) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            position: relative;
+        }
+        
+        .recipe-image::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: linear-gradient(transparent, white); }
+        
+        .recipe-content { padding: 1.5rem; }
+        .recipe-category { font-size: 0.8rem; color: var(--rust); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0.5rem; }
+        .recipe-content h3 { font-size: 1.4rem; color: var(--dark-wood); margin-bottom: 0.75rem; line-height: 1.3; }
+        .recipe-content p { color: #666; font-size: 0.95rem; margin-bottom: 1rem; }
+        .recipe-meta { display: flex; gap: 1.5rem; padding-top: 1rem; border-top: 1px dashed var(--butter); font-size: 0.85rem; color: var(--olive); }
+        .recipe-meta span { display: flex; align-items: center; gap: 0.3rem; }
+        
+        .btn { display: inline-block; background: var(--rust); color: white; padding: 0.8rem 2rem; border-radius: 30px; text-decoration: none; font-size: 0.9rem; transition: all 0.3s; margin-top: 1rem; }
+        .btn:hover { background: var(--warm-brown); transform: scale(1.05); }
+        
+        .newsletter {
+            background: var(--warm-brown);
+            color: var(--cream);
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+            border-radius: 12px;
+        }
+        
+        .newsletter h2 { font-size: 2rem; margin-bottom: 1rem; }
+        .newsletter p { margin-bottom: 2rem; font-style: italic; }
+        .newsletter-form { display: flex; max-width: 500px; margin: 0 auto; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+        .newsletter-form input { flex: 1; min-width: 250px; padding: 1rem 1.5rem; border: none; border-radius: 30px; font-family: inherit; font-size: 1rem; }
+        .newsletter-form button { background: var(--rust); color: white; border: none; padding: 1rem 2rem; border-radius: 30px; cursor: pointer; font-family: inherit; font-size: 1rem; transition: background 0.3s; }
+        .newsletter-form button:hover { background: var(--olive); }
+        
+        footer { background: var(--dark-wood); color: var(--butter); padding: 3rem 2rem; text-align: center; }
+        .footer-links { display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .footer-links a { color: var(--butter); text-decoration: none; transition: color 0.3s; }
+        .footer-links a:hover { color: white; }
+        .social-links { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; }
+        .social-links a { width: 45px; height: 45px; background: var(--warm-brown); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--cream); text-decoration: none; font-size: 1.2rem; transition: all 0.3s; }
+        .social-links a:hover { background: var(--rust); transform: translateY(-3px); }
+        .copyright { font-size: 0.9rem; opacity: 0.8; }
+        
+        @media (max-width: 768px) {
+            .logo { font-size: 2.5rem; }
+            header::before, header::after { display: none; }
+            nav ul { gap: 1.5rem; }
+            .hero h1 { font-size: 1.8rem; }
+            .recipes-grid { grid-template-columns: 1fr; }
+        }
+        
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo handwritten">Cook at Home</h1>
+        <p class="tagline handwritten">Where Family Traditions Begin</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/breakfast">Breakfast</a></li>
+            <li><a href="/soups-stews">Soups & Stews</a></li>
+            <li><a href="/comfort-classics">Comfort Classics</a></li>
+            <li><a href="/baking">Baking</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero">
+        <h1>Timeless Recipes for the Modern Kitchen</h1>
+        <p>Every dish tells a story. Discover recipes passed down through generations, crafted with love and meant to bring your family together around the table.</p>
+    </section>
+    
+    <main>
+        <div class="section-title">
+            <h2 class="handwritten">Our Favorite Recipes</h2>
+            <div class="divider">✦</div>
+        </div>
+        
+        <div class="recipes-grid">
+            <article class="recipe-card" itemscope itemtype="https://schema.org/Recipe">
+                <div class="recipe-image">🍲</div>
+                <div class="recipe-content">
+                    <span class="recipe-category">Comfort Classic</span>
+                    <h3 itemprop="name">Grandma's Chicken Pot Pie</h3>
+                    <p itemprop="description">Flaky golden crust filled with tender chicken, garden vegetables, and a rich, creamy sauce that warms the soul.</p>
+                    <div class="recipe-meta">
+                        <span>⏱️ <span itemprop="totalTime">1hr 15min</span></span>
+                        <span>👥 Serves 6</span>
+                        <span>⭐ 4.9</span>
+                    </div>
+                    <a href="/recipes/grandmas-chicken-pot-pie/" class="btn">View Recipe</a>
+                </div>
+            </article>
+            
+            <article class="recipe-card" itemscope itemtype="https://schema.org/Recipe">
+                <div class="recipe-image">🥧</div>
+                <div class="recipe-content">
+                    <span class="recipe-category">Baking</span>
+                    <h3 itemprop="name">Brown Butter Apple Pie</h3>
+                    <p itemprop="description">Caramelized apples nestled in brown butter pastry, topped with a crumbly streusel and drizzled with salted caramel.</p>
+                    <div class="recipe-meta">
+                        <span>⏱️ <span itemprop="totalTime">2hrs</span></span>
+                        <span>👥 Serves 8</span>
+                        <span>⭐ 5.0</span>
+                    </div>
+                    <a href="/recipes/brown-butter-apple-pie/" class="btn">View Recipe</a>
+                </div>
+            </article>
+            
+            <article class="recipe-card" itemscope itemtype="https://schema.org/Recipe">
+                <div class="recipe-image">🍖</div>
+                <div class="recipe-content">
+                    <span class="recipe-category">Sunday Dinner</span>
+                    <h3 itemprop="name">Slow-Braised Beef Short Ribs</h3>
+                    <p itemprop="description">Fall-off-the-bone tender beef ribs braised in red wine with herbs, served over creamy garlic mashed potatoes.</p>
+                    <div class="recipe-meta">
+                        <span>⏱️ <span itemprop="totalTime">4hrs</span></span>
+                        <span>👥 Serves 4</span>
+                        <span>⭐ 4.8</span>
+                    </div>
+                    <a href="/recipes/braised-beef-short-ribs/" class="btn">View Recipe</a>
+                </div>
+            </article>
+            
+            <article class="recipe-card" itemscope itemtype="https://schema.org/Recipe">
+                <div class="recipe-image">🥣</div>
+                <div class="recipe-content">
+                    <span class="recipe-category">Soups & Stews</span>
+                    <h3 itemprop="name">Farmhouse Vegetable Soup</h3>
+                    <p itemprop="description">Hearty root vegetables simmered in herb-infused broth with pearl barley and fresh thyme from the garden.</p>
+                    <div class="recipe-meta">
+                        <span>⏱️ <span itemprop="totalTime">45min</span></span>
+                        <span>👥 Serves 6</span>
+                        <span>⭐ 4.7</span>
+                    </div>
+                    <a href="/recipes/farmhouse-vegetable-soup/" class="btn">View Recipe</a>
+                </div>
+            </article>
+            
+            <article class="recipe-card" itemscope itemtype="https://schema.org/Recipe">
+                <div class="recipe-image">🍳</div>
+                <div class="recipe-content">
+                    <span class="recipe-category">Breakfast</span>
+                    <h3 itemprop="name">Cast Iron Skillet Cornbread</h3>
+                    <p itemprop="description">Golden, crispy-edged cornbread made the old-fashioned way in a well-seasoned cast iron skillet with honey butter.</p>
+                    <div class="recipe-meta">
+                        <span>⏱️ <span itemprop="totalTime">35min</span></span>
+                        <span>👥 Serves 8</span>
+                        <span>⭐ 4.9</span>
+                    </div>
+                    <a href="/recipes/cast-iron-cornbread/" class="btn">View Recipe</a>
+                </div>
+            </article>
+            
+            <article class="recipe-card" itemscope itemtype="https://schema.org/Recipe">
+                <div class="recipe-image">🍝</div>
+                <div class="recipe-content">
+                    <span class="recipe-category">Family Favorite</span>
+                    <h3 itemprop="name">Baked Mac and Cheese</h3>
+                    <p itemprop="description">Three-cheese blend with elbow pasta, topped with buttery breadcrumbs and baked until golden and bubbling.</p>
+                    <div class="recipe-meta">
+                        <span>⏱️ <span itemprop="totalTime">50min</span></span>
+                        <span>👥 Serves 8</span>
+                        <span>⭐ 5.0</span>
+                    </div>
+                    <a href="/recipes/baked-mac-and-cheese/" class="btn">View Recipe</a>
+                </div>
+            </article>
+        </div>
+        
+        <section class="newsletter">
+            <h2 class="handwritten">Join Our Kitchen Family</h2>
+            <p>Get weekly recipes, cooking tips, and seasonal inspiration delivered to your inbox.</p>
+            <form class="newsletter-form" action="/subscribe" method="POST">
+                <input type="email" name="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="/about">About Us</a>
+            <a href="/contact">Contact</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Use</a>
+            <a href="/sitemap.xml">Sitemap</a>
+        </div>
+        <div class="social-links">
+            <a href="https://pinterest.com/cookathomeblog" aria-label="Pinterest">📌</a>
+            <a href="https://instagram.com/cookathomeblog" aria-label="Instagram">📷</a>
+            <a href="https://facebook.com/cookathomeblog" aria-label="Facebook">👥</a>
+        </div>
+        <p class="copyright">© 2025 Cook at Home. All rights reserved. Made with ❤️ in our family kitchen.</p>
+    </footer>
+</body>
+</html>

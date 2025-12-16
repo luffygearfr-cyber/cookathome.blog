@@ -1,0 +1,19 @@
+# Cloudflare Pages Redirects for cookathome.blog
+
+# Trailing slash normalization (SEO best practice)
+/recipes /recipes/ 301
+/about /about/ 301
+/contact /contact/ 301
+/privacy /privacy/ 301
+/breakfast /breakfast/ 301
+/baking /baking/ 301
+/soups-stews /soups-stews/ 301
+/comfort-classics /comfort-classics/ 301
+
+# Legacy redirects
+/recipe/* /recipes/:splat 301
+
+# Social media shortcuts
+/pinterest https://pinterest.com/cookathomeblog 302
+/instagram https://instagram.com/cookathomeblog 302
+/facebook https://facebook.com/cookathomeblog 302

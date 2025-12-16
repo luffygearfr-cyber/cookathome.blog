@@ -1,0 +1,45 @@
+# Cloudflare Pages Headers for cookathome.blog
+# Optimized for Pinterest Rich Pins and Security
+
+# Global headers for all pages
+/*
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# HTML pages - allow Pinterest to embed
+/*.html
+  X-Frame-Options: ALLOW-FROM https://www.pinterest.com
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+# Homepage
+/
+  X-Frame-Options: ALLOW-FROM https://www.pinterest.com
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+# Recipe pages - important for Rich Pins
+/recipes/*
+  X-Frame-Options: ALLOW-FROM https://www.pinterest.com
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+# Images - allow Pinterest access and long cache
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# Static assets
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+# Sitemap and robots
+/sitemap.xml
+  Cache-Control: public, max-age=86400
+  Content-Type: application/xml
+
+/robots.txt
+  Cache-Control: public, max-age=86400
+  Content-Type: text/plain
